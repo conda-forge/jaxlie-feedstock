@@ -16,17 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
     - typing-extensions >=4.0.0
     - typing_extensions
-    - python >=3.7
+    - python >=3.8
     - jax >=0.3.18
     - jaxlib >=0.1.67
     - jax-dataclasses >=1.4.4
     - numpy
-    - overrides !=4
     - tyro
 
 test:
