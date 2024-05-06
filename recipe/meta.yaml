@@ -1,5 +1,5 @@
 {% set name = "jaxlie" %}
-{% set version = "1.3.4" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaxlie-{{ version }}.tar.gz
-  sha256: 70f9d093ffa8e9ef148656a6105a8489820cee5f75c3181d5692d86958e6df1b
+  sha256: 64aa60f652a163b2d40e2ed506475519b88a89b598cc536667c1888f07968049
 
 build:
   noarch: python
@@ -19,8 +19,10 @@ requirements:
     - python >=3.7
     - pip
   run:
+    - typing-extensions >=4.0.0
+    - typing_extensions
     - python >=3.7
-    - jax >=0.2.14
+    - jax >=0.3.18
     - jaxlib >=0.1.67
     - jax-dataclasses >=1.4.4
     - numpy
