@@ -1,5 +1,5 @@
 {% set name = "jaxlie" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxlie-{{ version }}.tar.gz
-  sha256: 7465e8faea7dcd5b2a5925aa8e9bcf7e59a3eaa7d6b8dc476dbbeb069079984d
+  sha256: d9981df6e1cc6a63c6c65d647c2f4848685afd10f725f4964b7e68a1b434c3df
 
 build:
   noarch: python
